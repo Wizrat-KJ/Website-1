@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kitki</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"
+      defer
+    ></script>
+    <script src="/src/mainFile.js" defer></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class = "header">
+        <div class="title">
+          <h1>Kitki</h1>
+        </div>
+        <div class="subtitle">
+          <p>Your source for curious cat facts and adorable kitten photos!</p>
+        </div>
+        <div class="line">
+          <hr class="header-line"/>
+        </div>
+      </div>
+      <div class="main">
+        <div class="image-container">
+          <div class="image-main"></div>
+        </div>
+        <div class="btn-gen-container">
+          <button class="btn-gen-pussy">Click here to see hot kittens!</button>
+        </div>
+        <div class="funfact-container">
+          <div class="funfact-input-container">
+            <input type="text" pattern="/^\d+$/" oninput="this.value = Math.max(1,Math.min(100, this.value.replace(/\D+/g, '')))" maxlength="3" placeholder="Enter a number"/>
+            <button class="funfact-btn-search">Search</button>
+          </div>
+          <div class="funfact-content">
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="footer-content">
+          <div class="footer-text">
+            <p> WSB API PROJEKT <br>Krzysztof Janiszewski-Gołda <br>Sandra Gniewkowska</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
